@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+	font-size: 12px;
+	font-family: 'Lato', Arial;
+}
+
+.PageZero {
+	background: url('/images/background.jpg') no-repeat;
+	width: 100vw;
+	height: 100vh;
+	background-position: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	align-content: space-around;	
+}
+
+.PageZero header h1 {
+	font-size: 48px;
+	font-family: Tahoma, Arial;
+	color: #fff;
+	text-align: center;
+}
+
+.login, .register {
+	background: rgba(0,0,0,0.6);
+	width: 400px;
+	height: 400px;
+	display: inline-block;
+	margin: 20px 20px;
+	padding: 20px 20px;
+	float: left;
+}	
+
+.register {
+	float: right;
+}
+
+input {
+	float: right;
+	margin-bottom: 10px;
+	padding-left: 10px;
+	width: 250px;
+}
+
+input::placeholder {
+	color: lightgrey;
+}
+
+button {
+	-moz-box-shadow:inset 0px 1px 0px 0px #a6827e;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #a6827e;
+	box-shadow:inset 0px 1px 0px 0px #a6827e;
+	background-color:transparent;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #54381e;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #4d3534;
+	float: right;
+}	
+
+button:hover {
+	background-color:transparent;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+input[type="checkbox"] {
+	float: left;
+	width: 15px;
+}	
+
+label {
+	color: #FFF;
+}	
+
+.frontPage{
+	background: url('/images/background2.jpg') no-repeat;
+	background-color: #000;
+	background-position: center;
+}
+
+#movies img, #movie img {
+	width: 100%;
+}
+
+@media (min-width: 960px) {
+	#movies .col-md-3 .well {
+		height: 390px;
+	}
+
+	#movies .col-md-3 img {
+		height: 240px;
+	}
+}
+
+@media (max-width: 992px) {
+	.btn {
+		margin: 5px;
+	}
+}
